@@ -1,6 +1,6 @@
 # Sovereign Bond Pricing Model
 
-This project implements several short-rate interest rate models to price sovereign bonds and analyze model-implied term structures. The goal is find out the reason for the gap between market observed prices and projected fair market values, as market observed values imply unrealistically low implied future short term interest rates. 
+This project implements several short-rate interest rate models to price sovereign bonds and analyze model-implied term structures. The goal is to find out the reason for the gap between market observed prices and projected fair market values, as market observed values imply unrealistically low implied future short term interest rates. 
 
 Project Report Can be Read Here: https://drive.google.com/file/d/1gR_FQc4BcFJohK53C24rQRPZ58wZFfm9/view?usp=sharing
 
