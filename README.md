@@ -1,8 +1,8 @@
 # Sovereign Bond Pricing Model
 
-This project implements several short-rate interest rate models to price sovereign bonds and analyze model-implied term structures. The goal is to find out the reason for the gap between market observed prices and projected fair market values, as market observed values imply unrealistically low implied future short term interest rates. 
+This project implements several short-rate interest rate models to price sovereign bonds and analyze model-implied term structures. The goal is to explain the gap between observed market prices and projected fair values, where market prices imply unrealistically low future short-term interest rates. 
 
-Project Report Can be Read Here: https://drive.google.com/file/d/1gR_FQc4BcFJohK53C24rQRPZ58wZFfm9/view?usp=sharing
+Full Project Report With Graphics Can be Read Here: https://drive.google.com/file/d/1gR_FQc4BcFJohK53C24rQRPZ58wZFfm9/view?usp=sharing
 
 The project includes implementations of:
 
@@ -26,23 +26,41 @@ The objective is to:
 - Implement common short-rate models used in fixed income
 - Calibrate model parameters to market prices
 - Compare model-implied bond prices with observed prices
+- Derive a market implied price of uncertainty
 
 ---
 
 ## Repository Structure
 
-Sovereign-Bond-Pricing-Model  
-│  
-├── data/                  # Sovereign bond price data  
-├── notebooks/             # Analysis and experiments  
-│   └── bontam_analysis.ipynb  
-│  
-├── src/                   # Model implementations  
-│   ├── cir_model.py  
-│   ├── hull_white.py  
-│   ├── bk_model.py  
-│   ├── calibration.py  
-└── README.md  
+## Repository Structure
+
+```
+Sovereign-Bond-Pricing-Model
+│
+├── data/                              # Scripts for constructing bond and market datasets
+│   ├── Argentinian_holidays.py
+│   ├── bontam_expiries.py
+│   ├── BONTAM_Prices.py
+│   ├── Fixed_rate_bond_prices.py
+│   └── TAMAR_view.py
+│
+├── notebooks/                         # Research notebook driving the empirical analysis
+│   └── bontam_analysis.ipynb
+│
+├── src/                               # Core model implementations and financial logic
+│   ├── bk_model.py
+│   ├── BONTAM_payout_calc.py
+│   ├── cir_model.py
+│   ├── date_time_custom.py
+│   ├── hull_white.py
+│   ├── short_rate_lasso_regression.py
+│   ├── simple_diffusion.py
+│   └── TAMAR_api.py
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+```
 
 ---
 
